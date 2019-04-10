@@ -12,6 +12,7 @@ public class Item : ScriptableObject
 
     public virtual void Use()
     {
-        Debug.Log("Using");
+        FindObjectOfType<PlayerController>().Grow();
+        Inventory.Instance.Remove(this);
     }
 }

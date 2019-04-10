@@ -72,4 +72,9 @@ public class PlayerController : MonoBehaviour
         newFocus.OnFocused(transform);
 
     }
+
+    public void Grow()
+    {
+        transform.localScale = transform.localScale * 2;
+    }
 }
